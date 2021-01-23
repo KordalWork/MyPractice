@@ -1,0 +1,22 @@
+{
+  "name": "mypractice",
+  "version": "1.0.0",
+  "description": "Практика на макете",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KordalWork/MyPractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KordalWork/MyPractice/issues"
+  },
+  "homepage": "https://github.com/KordalWork/MyPractice#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
