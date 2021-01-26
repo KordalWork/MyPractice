@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/KordalWork/MyPractice#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0"
   },
   "dependencies": {
     "browser-sync": "^2.26.14"
