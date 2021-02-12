@@ -26,6 +26,16 @@ function styles() {
       .pipe(browserSync.stream())
 }
 
+function build() {
+  return src([
+    'src/css/style.min.css',
+    'src/fonts/**/*',
+    'src/js/main.js',
+    'src/*.html'
+  ], {base: 'src'})
+    .pipe(dest('dist'))
+}
+
 function watching() {
   watch(['src/sass/**/*.sass'], styles);
   watch(['src/*html']).on('change', browserSync.reload);
@@ -34,5 +44,6 @@ function watching() {
 exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
+exports.build = build;
 
 exports.default = parallel(browsersync, watching);
