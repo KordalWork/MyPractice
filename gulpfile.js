@@ -1,10 +1,11 @@
-const { src, dest, watch, parallel } = require('gulp');
+const { src, dest, watch, parallel, series } = require('gulp');
 
 const sass         = require('gulp-sass');
 const concat       = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync  = require('browser-sync').create();
 const imagemin     = require('gulp-imagemin');
+const del          = require('del');
 
 function browsersync() {
   browserSync.init({
@@ -12,6 +13,10 @@ function browsersync() {
       baseDir: 'src/'
     }
   });
+}
+
+function cleanDist() {
+  return del('dist')
 }
 
 function images() {
@@ -63,7 +68,9 @@ function watching() {
 exports.styles = styles;
 exports.watching = watching;
 exports.browsersync = browsersync;
-exports.build = build;
 exports.images = images;
+exports.cleanDist = cleanDist;
 
+
+exports.build = series(cleanDist, images, build);
 exports.default = parallel(browsersync, watching);
