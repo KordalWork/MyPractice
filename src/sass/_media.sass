@@ -31,17 +31,25 @@
       color: $light
       text-decoration: none
   .hero
-    &__text
+    &__content
+      margin: auto
+      text-align: center
+    &__button
+      width: 70%
       font-size: 1.8rem
-      margin: 5rem 0
+    &__text
+      font-size: 2.2rem
+      margin: 8rem 0
     &__scroll-down
       min-width: 12.65rem
       min-height: 4.95rem      
   .title
-    font-size: 2.20rem
+    font-size: 3rem
     font-family: 'Yeseva One', cursive
     font-weight: 100     
 @media screen and ( max-width: 375px )
+  .container
+    width: 95%
   .menu
     font-size: 0.857rem
   .contacts
@@ -50,13 +58,15 @@
   .hero
     &__content
       min-width: 100%
+    &__text
+      font-size: 2rem  
     &__scroll-down
       display: none
     &__button
       display: block
       width: 100%
-      height: 3.57rem 
-      font-size: 1.5rem   
+      height: 4.5rem 
+      font-size: 1.8rem   
 
 
   
