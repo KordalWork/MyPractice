@@ -7,3 +7,21 @@ html
 body
   font-family: 'Futura Book', sans-serif
   font-size: 1rem
+
+.section
+  &-title
+    text-align: center
+    font-family: 'Yeseva One', cursive
+    text-transform: uppercase
+    &__img
+      display: flex
+      justify-content: center
+      align-items: center
+      &::before, &::after
+        content: ''
+        width: 32px
+        height: 2px
+        margin: 0 10px
+        background-color: $primary
+        
+        
