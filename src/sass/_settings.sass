@@ -14,8 +14,7 @@ img
 .row
   display: flex
   justify-content: space-around
-  align-items: flex-start
-  padding-top: 4rem  
+  padding-top: 2rem  
 
 .section
   padding: 2rem 0
@@ -24,12 +23,15 @@ img
     font-family: 'Yeseva One', cursive
     text-transform: uppercase
     &__heading
+      margin: 0
+      padding: 2rem 0
       font-size: 2.5rem
       font-weight: normal
     &__img
       display: flex
       justify-content: center
       align-items: center
+      padding-bottom: 2rem
       &::before, &::after
         content: ''
         width: 32px
@@ -37,7 +39,10 @@ img
         margin: 0 10px
         background-color: $primary
   &-description
-    font-family: 'Futura Book', serif
-    font-size: 1.43rem
+    &__text
+      margin: 0 auto
+      font-family: 'Futura Book', serif
+      font-size: 1.43rem
+      text-align: center
         
         

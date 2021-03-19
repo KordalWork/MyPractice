@@ -2,7 +2,7 @@
   html
     font-size: 12px
 
-@media screen and ( max-width: 1000px )
+@media screen and ( max-width: 1050px )
   html
     font-size: 10px
   .nav
@@ -19,6 +19,25 @@
       width: 33.5rem
       min-width: 35rem
       margin-left: 0
+  .clients
+    background: $light url('../img/clients/frame.svg') no-repeat bottom / cover 
+  .row
+    &-clients
+      flex-direction: column
+  .client
+    &__heading
+      flex-direction: column
+    &__foto
+      width: 7rem
+      height: 7rem
+      margin: 1rem 0 
+    &__name
+      width: auto
+      height: auto  
+      font-size: 1.5rem
+    &__comment
+      font-size: 1.5rem
+      text-align: center       
 @media screen and ( max-width: 750px )
   .nav
     display: none
@@ -65,8 +84,8 @@
     &__text
       width: 30rem      
 @media screen and ( max-width: 400px )
-  .container
-    width: 95%
+  // .container
+  //   width: 95%
   .menu
     font-size: 0.857rem
   .contacts
