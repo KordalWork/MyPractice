@@ -1,18 +1,69 @@
 .footer
   width: 100%
+  padding: 1rem 0
   left: 0
   bottom: 0
   background-color: $dark
   color: $light
-.contacts
+  &__logo
+    display: flex
+    max-width: 8rem
+  &__img
+    display: flex
+    justify-content: center
+    align-items: center
+  &__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__contacts
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center  
   &__title
     margin: 0
     font-family: 'Yeseva One', serif
+    font-size: 1.2rem
     font-weight: normal
     text-transform: uppercase
+    text-align: center
     color: $primary
-  &__item
-    display: block
-    margin: 0.4rem 0
+  &__icons
+    display: flex
+    justify-content: space-around
+    text-align: center
+    font-size: 2rem
+  &__phone
+    margin: 0
+    color: $primary
+    font-size: 1.2rem
+    text-decoration: none
+    &::before
+      color: $primary
+      margin-right: 0.5rem
+  &__dev-info
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+  &__dev-site
+    margin: 1.18rem
+    font-size: 1.2rem
+    font-family: 'Futura Demi', serif
+    text-transform: uppercase
+    text-decoration: none
     color: $light
-    text-decoration: none 
+    transition: color 0.2s
+    &:hover
+      color: $primary
+.fab
+  color: $light
+  text-decoration: none
+  margin: 0.7rem
+  transition: color 0.2s
+  &:hover
+    color: $primary
+
+
+
