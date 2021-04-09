@@ -82,7 +82,10 @@
     font-weight: 100 
   .card
     &__text
-      width: 30rem      
+      width: 30rem  
+  .footer
+    &__logo
+      display: none        
 @media screen and ( max-width: 400px )
   // .container
   //   width: 95%
@@ -117,6 +120,12 @@
     &__text
       width: 22rem
       max-width: 100%
+  .footer
+    &__content
+      display: flex
+      flex-direction: column
+    &__contacts
+      margin-bottom: 0.8rem      
       
 @media screen and ( max-height: 620px )
   .hero

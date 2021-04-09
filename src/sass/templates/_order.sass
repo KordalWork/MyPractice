@@ -1,22 +1,38 @@
 .order
-  display: none
-.order-row
-  display: flex
-  justify-content: space-between
-  color: $light
-  background-color: $light
-  &__content
-    flex-basis: 50%
-  &__description
+  height: 40rem
+  background: $dark url('../img/order/order-image.png') no-repeat bottom left
+  &-row
     display: flex
-    justify-content: center
-    align-items: center
-    height: 40rem
-    background: $light url('../img/order/order-image.png') no-repeat center / cover
-  &__text
-    width: 30rem
-    height: 30rem
-    border-top: 3.5px solid $primary
-    border-right: 3.5px solid $primary
-    border-bottom: 3.5px solid $primary
-    border-radius: 50%
+    justify-content: space-between
+    color: $light
+    &__content
+      flex-basis: 50%
+    &__description
+      display: flex
+      justify-content: center
+      align-items: center
+      &::before, &::after
+        content: ''
+        width: 20px
+        height: 5px
+        background-color: $primary 
+    &__item
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 1rem
+      background-color: $primary
+      width: 2.9rem
+      height: 2.9rem
+      border-radius: 50%
+      text-align: center
+    &__text
+      width: 20rem  
+      margin: 0
+    &__numb
+      margin: 0 auto
+      font-family: 'Yeseva One', cursive
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px  
